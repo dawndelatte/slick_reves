@@ -20,6 +20,7 @@ nav a, p, li {
     font-family: $primary;
 }
 
+
 /*=====font sizes & weights=====*/
 p, a {
     font-size: 1.25em;
@@ -48,3 +49,9 @@ h3 {
 }
 
 .slick_logo {font-size: 1.5em;}
+
+.post_link {
+    font-family: $secondary;
+    font-size: 1.65em;
+    font-weight: 700;
+}
