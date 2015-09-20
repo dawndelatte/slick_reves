@@ -1,0 +1,50 @@
+/*=====variables=====*/
+
+$primary: "brandon-grotesque", sans-serif; 
+$secondary: "adonis-web", sans-serif;
+
+$background-primary: rgb(14,94,98);
+$type-light: rgb(242,238,203);
+$type-dark: rgb(55,3,32);
+
+
+
+
+/*=====font families=====*/
+
+h1, h2, h3, .slick_logo {
+    font-family: $secondary;
+}
+
+nav a, p, li {
+    font-family: $primary;
+}
+
+/*=====font sizes & weights=====*/
+p, a {
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+* a {
+    text-decoration: none;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.65em;
+    font-weight: 700;
+}
+
+.slick_logo {font-size: 1.5em;}
