@@ -64,11 +64,6 @@ h1, h2, h3, .slick_logo {
 nav a, p, li {
   font-family: "brandon-grotesque", sans-serif; }
 
-.post_link {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 1.65em;
-  font-weight: 700; }
-
 /*=====font sizes & weights=====*/
 p, a {
   font-size: 1.25em;
@@ -94,6 +89,11 @@ h3 {
 .slick_logo {
   font-size: 1.5em; }
 
+.post_link {
+  font-family: "adonis-web", sans-serif;
+  font-size: 1.65em;
+  font-weight: 700; }
+
 /*=====variables=====*/
 body * {
   -webkit-box-sizing: border-box;
@@ -113,18 +113,12 @@ header, footer {
   color: #370320; }
 
 .slick_logo {
-  float: left;
-  width: 50%; }
+  margin-bottom: 1.2em; }
 
-.head_nav {
-  float: right;
-  width: 50%;
-  text-align: right; }
-
-.head_nav ul li, footer ul li {
+.head_nav ul li {
   display: inline-block;
   padding-right: 5%; }
-  .head_nav ul li:last-of-type, footer ul li:last-of-type {
+  .head_nav ul li:last-of-type {
     padding-right: 0; }
 
 .foot_nav {
@@ -138,10 +132,7 @@ header, footer {
 
 /*=====HOME PAGE=====*/
 .wrapper {
-  width: 80%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 90%; }
 
 .intro_info, .featured_posts {
   max-width: 1000px;
@@ -160,59 +151,100 @@ header, footer {
 .featured_posts {
   overflow: hidden;
   padding: 7em 0; }
-  .featured_posts h3 {
+  .featured_posts h3, .featured_posts .post_link {
     padding-bottom: 1em;
     color: #f85550; }
   .featured_posts p {
     color: #370320; }
 
-.post1, .post2, .post3 {
-  float: left;
-  width: 30%;
-  margin-right: 5%; }
-
-.post3 {
-  margin-right: 0; }
+.post {
+  margin-bottom: 5em; }
+  .post:last-of-type {
+    margin-bottom: 0; }
 
 .city_photos {
   overflow: hidden; }
 
-.city1, .city2, .city3, .city4, .city5, .city6 {
+.city {
   display: block;
-  height: 220px;
-  width: 33.333%;
-  float: left; }
-  .city1:hover, .city2:hover, .city3:hover, .city4:hover, .city5:hover, .city6:hover {
+  height: 220px; }
+  .city:hover {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%); }
-  .city1 h3, .city2 h3, .city3 h3, .city4 h3, .city5 h3, .city6 h3 {
+  .city h3 {
     text-align: center;
     padding: 3em 1em;
     color: #370320; }
 
-.city1 {
+.paris {
   background: url(../assets/61H.jpg) no-repeat;
   background-size: cover; }
 
-.city2 {
+.moscow {
   background: url(../assets/6H.jpg) no-repeat;
   background-size: cover; }
 
-.city3 {
+.mumbai {
   background: url(../assets/52H.jpg) no-repeat;
   background-size: cover; }
 
-.city4 {
+.newyork {
   background: url(../assets/219H.jpg) no-repeat;
   background-size: cover; }
 
-.city5 {
+.seoul {
   background: url(../assets/74H.jpg) no-repeat;
   background-size: cover; }
 
-.city6 {
+.buenos {
   background: url(../assets/224H.jpg) no-repeat;
   background-size: cover; }
+
+@media screen and (min-width: 640px) {
+  footer ul li {
+    display: inline-block;
+    padding-right: 5%; }
+    footer ul li:last-of-type {
+      padding-right: 0; }
+
+  .post {
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+    margin-bottom: 3em; }
+    .post:nth-of-type(2) {
+      margin-right: 0; }
+
+  .city {
+    display: block;
+    height: 220px;
+    width: 50%;
+    float: left; } }
+@media screen and (min-width: 720px) {
+  .head_nav {
+    float: right;
+    width: 50%;
+    text-align: right; }
+
+  .slick_logo {
+    float: left;
+    width: 50%; } }
+@media screen and (min-width: 850px) {
+  .post_link {
+    display: inline-block;
+    vertical-align: top; }
+
+  .post {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 0; }
+    .post:nth-of-type(2) {
+      margin-right: 5%; }
+    .post:nth-of-type(3) {
+      margin-right: 0; }
+
+  .city {
+    width: 33.333%; } }
 
 /*# sourceMappingURL=main.css.map */

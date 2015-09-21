@@ -27,10 +27,9 @@ header, footer {
     color: $type-dark;
 }
 
-.slick_logo {float: left; width: 50%;}
+.slick_logo {margin-bottom: 1.2em;}
 
-.head_nav {float: right; width: 50%; text-align: right;}
-.head_nav ul li, footer ul li {
+.head_nav ul li {
     display: inline-block; 
     padding-right: 5%;
     
@@ -45,10 +44,7 @@ header, footer {
 /*=====HOME PAGE=====*/
 
 .wrapper {
-    width: 80%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
 }
 
 .intro_info, .featured_posts {
@@ -73,7 +69,7 @@ header, footer {
     overflow: hidden; 
     padding: 7em 0;
 
-    h3 {
+    h3, .post_link {
         padding-bottom: 1em;
         color: $type-highlight;
     }
@@ -81,29 +77,21 @@ header, footer {
     p {
         color: $type-dark;
     }
-
-    // h3:nth-of-type(1) {
-    //     font-size: 1.25em;
-    //     line-height: 1;
-    // }
 }
 
+.post {
+        margin-bottom: 5em;
 
-.post1, .post2, .post3 {
-    float: left;
-    width: 30%;
-    margin-right: 5%
-}
-
-.post3 {margin-right: 0;}
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
 
 .city_photos {overflow: hidden;}
 
-.city1, .city2, .city3, .city4, .city5, .city6 {
+.city {
     display: block;
     height: 220px;
-    width: 33.333%;
-    float: left;
 
     &:hover {
         -webkit-filter: grayscale(100%);
@@ -115,21 +103,16 @@ header, footer {
     text-align: center;
     padding: 3em 1em;
     color:$type-dark;
-    // opacity: 0;
-
-    // &:hover {
-    //     opacity: 1;
-    // }  
 
     }
 }
 
 
-.city1 {background: url(../assets/61H.jpg) no-repeat; background-size: cover;}
-.city2 {background: url(../assets/6H.jpg) no-repeat;background-size: cover;}
-.city3 {background: url(../assets/52H.jpg) no-repeat;background-size: cover;}
-.city4 {background: url(../assets/219H.jpg) no-repeat;background-size: cover;}
-.city5 {background: url(../assets/74H.jpg) no-repeat;background-size: cover;}
-.city6 {background: url(../assets/224H.jpg) no-repeat;background-size: cover;}
+.paris {background: url(../assets/61H.jpg) no-repeat; background-size: cover;}
+.moscow {background: url(../assets/6H.jpg) no-repeat;background-size: cover;}
+.mumbai {background: url(../assets/52H.jpg) no-repeat;background-size: cover;}
+.newyork {background: url(../assets/219H.jpg) no-repeat;background-size: cover;}
+.seoul {background: url(../assets/74H.jpg) no-repeat;background-size: cover;}
+.buenos {background: url(../assets/224H.jpg) no-repeat;background-size: cover;}
 
 
