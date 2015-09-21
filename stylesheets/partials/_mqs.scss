@@ -64,3 +64,24 @@ footer ul li {
     width: 33.333%;
 	}
 }
+
+@media screen and (min-width: 920px) {
+
+    .post_mama {
+        float: left;
+        width: 60%;
+        margin-right: 10%;
+    }
+
+    .related_posts{
+        float: right;
+        width: 30%;
+
+    } 
+
+
+
+
+
+
+}

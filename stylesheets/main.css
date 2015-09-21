@@ -72,6 +72,10 @@ p, a {
 * a {
   text-decoration: none;
   font-weight: 100; }
+  * a:hover {
+    font-weight: 400; }
+  * a:visited {
+    color: #370320; }
 
 h1 {
   font-size: 2.5em;
@@ -93,6 +97,8 @@ h3 {
   font-family: "adonis-web", sans-serif;
   font-size: 1.65em;
   font-weight: 700; }
+  .post_link:hover {
+    font-weight: 700; }
 
 /*=====variables=====*/
 body * {
@@ -132,7 +138,9 @@ header, footer {
 
 /*=====HOME PAGE=====*/
 .wrapper {
-  width: 90%; }
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .intro_info, .featured_posts {
   max-width: 1000px;
@@ -201,6 +209,24 @@ header, footer {
   background: url(../assets/224H.jpg) no-repeat;
   background-size: cover; }
 
+/*=====POST PAGE=====*/
+article {
+  margin-bottom: 4em;
+  color: #370320; }
+  article p {
+    padding-bottom: 1em;
+    max-width: 800px; }
+    article p:last-of-type {
+      padding-bottom: 0; }
+    article p:nth-of-type(3) {
+      padding-top: 1em; }
+
+.related_posts h2 {
+  padding-bottom: 1em;
+  color: #f85550; }
+.related_posts li {
+  padding-bottom: .5em; }
+
 @media screen and (min-width: 640px) {
   footer ul li {
     display: inline-block;
@@ -246,5 +272,14 @@ header, footer {
 
   .city {
     width: 33.333%; } }
+@media screen and (min-width: 920px) {
+  .post_mama {
+    float: left;
+    width: 60%;
+    margin-right: 10%; }
+
+  .related_posts {
+    float: right;
+    width: 30%; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -45,6 +45,8 @@ header, footer {
 
 .wrapper {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro_info, .featured_posts {
@@ -114,5 +116,41 @@ header, footer {
 .newyork {background: url(../assets/219H.jpg) no-repeat;background-size: cover;}
 .seoul {background: url(../assets/74H.jpg) no-repeat;background-size: cover;}
 .buenos {background: url(../assets/224H.jpg) no-repeat;background-size: cover;}
+
+
+/*=====POST PAGE=====*/
+
+
+article {
+    margin-bottom: 4em;
+    color: $type-dark;
+
+    p {
+        padding-bottom: 1em;
+        max-width: 800px;
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+
+        &:nth-of-type(3){
+            padding-top: 1em;
+        }
+    }
+}
+
+.related_posts {
+
+    h2 {
+        padding-bottom: 1em;
+        color: $type-highlight;
+    }
+
+    li {
+        padding-bottom: .5em;
+    }
+}
+
+
 
 

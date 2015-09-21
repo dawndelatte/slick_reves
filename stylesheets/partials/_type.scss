@@ -6,6 +6,7 @@ $secondary: "adonis-web", sans-serif;
 $background-primary: rgb(14,94,98);
 $type-light: rgb(242,238,203);
 $type-dark: rgb(55,3,32);
+$type-highlight: rgb(248,85,80);
 
 
 
@@ -30,6 +31,14 @@ p, a {
 * a {
     text-decoration: none;
     font-weight: 100;
+
+    &:hover {
+        font-weight: 400;
+    }
+
+    &:visited {
+        color: $type-dark;
+    }
 }
 
 h1 {
@@ -54,4 +63,8 @@ h3 {
     font-family: $secondary;
     font-size: 1.65em;
     font-weight: 700;
+
+    &:hover {
+        font-weight: 700;
+    }
 }
