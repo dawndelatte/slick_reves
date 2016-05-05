@@ -57,50 +57,7 @@ table {
   border-spacing: 0; }
 
 /*=====variables=====*/
-/*=====font families=====*/
-h1, h2, h3, .slick_logo {
-  font-family: "adonis-web", sans-serif; }
-
-nav a, p, li {
-  font-family: "brandon-grotesque", sans-serif; }
-
-/*=====font sizes & weights=====*/
-p, a {
-  font-size: 1.25em;
-  line-height: 1.5; }
-
-* a {
-  text-decoration: none;
-  font-weight: 100; }
-  * a:hover {
-    font-weight: 400; }
-  * a:visited {
-    color: #370320; }
-
-h1 {
-  font-size: 2.5em;
-  font-weight: 700;
-  margin-bottom: 1em; }
-
-h2 {
-  font-size: 2em;
-  font-weight: 700; }
-
-h3 {
-  font-size: 1.65em;
-  font-weight: 700; }
-
-.slick_logo {
-  font-size: 1.5em; }
-
-.post_link {
-  font-family: "adonis-web", sans-serif;
-  font-size: 1.65em;
-  font-weight: 700; }
-  .post_link:hover {
-    font-weight: 700; }
-
-/*=====variables=====*/
+/*====================*/
 body * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -186,33 +143,41 @@ header, footer {
     color: #370320; }
 
 .paris {
-  background: url(../assets/61H.jpg) no-repeat;
+  background: url(../assets/paris-home.jpg) no-repeat;
   background-size: cover; }
 
 .moscow {
-  background: url(../assets/6H.jpg) no-repeat;
+  background: url(../assets/moscow.jpg) no-repeat;
   background-size: cover; }
 
 .mumbai {
-  background: url(../assets/52H.jpg) no-repeat;
+  background: url(../assets/mumbai.jpg) no-repeat;
   background-size: cover; }
 
 .newyork {
-  background: url(../assets/219H.jpg) no-repeat;
+  background: url(../assets/newyork.jpg) no-repeat;
   background-size: cover; }
 
 .seoul {
-  background: url(../assets/74H.jpg) no-repeat;
+  background: url(../assets/seoul.jpg) no-repeat;
   background-size: cover; }
 
 .buenos {
-  background: url(../assets/224H.jpg) no-repeat;
+  background: url(../assets/buenos-aires.jpg) no-repeat;
   background-size: cover; }
 
 /*=====POST PAGE=====*/
+.post_header {
+  border-bottom: solid #0e5e62 2px; }
+
+.post_footer {
+  border-top: solid #0e5e62 2px;
+  margin-top: 2em; }
+
 article {
   margin-bottom: 4em;
-  color: #370320; }
+  color: #370320;
+  padding-top: 3.5em; }
   article p {
     padding-bottom: 1em;
     max-width: 800px; }
@@ -226,6 +191,54 @@ article {
   color: #f85550; }
 .related_posts li {
   padding-bottom: .5em; }
+
+/*=====font families=====*/
+h1, h2, h3, .slick_logo {
+  font-family: "adonis-web", sans-serif; }
+
+nav a, p, li {
+  font-family: "brandon-grotesque", sans-serif; }
+
+/*=====font sizes & weights=====*/
+p, a {
+  font-size: 1.25em;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #370320; }
+  a:hover {
+    border-bottom: solid #f85550 2px; }
+  a:visited {
+    color: #370320; }
+
+.post a:hover {
+  color: #f97672;
+  border-bottom: none; }
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1em; }
+
+h2 {
+  font-size: 2em;
+  font-weight: 700; }
+
+h3 {
+  font-size: 1.65em;
+  font-weight: 700; }
+
+.slick_logo {
+  font-size: 1.5em; }
+
+.post_link {
+  font-family: "adonis-web", sans-serif;
+  font-size: 1.65em;
+  font-weight: 700; }
+  .post_link:hover {
+    font-weight: 700; }
 
 @media screen and (min-width: 640px) {
   footer ul li {
@@ -278,7 +291,11 @@ article {
     width: 60%;
     margin-right: 10%; }
 
+  article {
+    padding-top: 4em; }
+
   .related_posts {
+    padding-top: 4em;
     float: right;
     width: 30%; } }
 

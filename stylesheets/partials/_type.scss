@@ -1,16 +1,3 @@
-/*=====variables=====*/
-
-$primary: "brandon-grotesque", sans-serif; 
-$secondary: "adonis-web", sans-serif;
-
-$background-primary: rgb(14,94,98);
-$type-light: rgb(242,238,203);
-$type-dark: rgb(55,3,32);
-$type-highlight: rgb(248,85,80);
-
-
-
-
 /*=====font families=====*/
 
 h1, h2, h3, .slick_logo {
@@ -28,18 +15,26 @@ p, a {
     line-height: 1.5;
 }
 
-* a {
+a {
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 400;
+    color: $type-dark;
 
     &:hover {
-        font-weight: 400;
+        border-bottom: solid $type-highlight 2px;
     }
 
     &:visited {
         color: $type-dark;
     }
 }
+
+.post a:hover {
+    color: lighten($type-highlight, 7%);
+    border-bottom: none;
+
+}
+
 
 h1 {
     font-size: 2.5em;

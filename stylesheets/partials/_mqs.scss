@@ -7,8 +7,6 @@ footer ul li {
     &:last-of-type {padding-right: 0;}
 }
 
-// .foot_nav {float: left; width: 50%}
-// .social_nav {float: right; width: 50%; text-align: right;}
 
 .post {
     float: left;
@@ -73,7 +71,13 @@ footer ul li {
         margin-right: 10%;
     }
 
+    article {
+        padding-top: 4em;
+    }
+
     .related_posts{
+
+        padding-top: 4em;
         float: right;
         width: 30%;
 

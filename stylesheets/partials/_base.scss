@@ -1,8 +1,15 @@
 /*=====variables=====*/
+
 $background-primary: rgb(14,94,98);
 $type-light: rgb(242,238,203);
 $type-dark: rgb(55,3,32);
 $type-highlight: rgb(248,85,80);
+
+$primary: "brandon-grotesque", sans-serif; 
+$secondary: "adonis-web", sans-serif;
+
+/*====================*/
+
 
 body {
     * {
@@ -87,6 +94,7 @@ header, footer {
         &:last-of-type {
             margin-bottom: 0;
         }
+
     }
 
 .city_photos {overflow: hidden;}
@@ -110,20 +118,29 @@ header, footer {
 }
 
 
-.paris {background: url(../assets/61H.jpg) no-repeat; background-size: cover;}
-.moscow {background: url(../assets/6H.jpg) no-repeat;background-size: cover;}
-.mumbai {background: url(../assets/52H.jpg) no-repeat;background-size: cover;}
-.newyork {background: url(../assets/219H.jpg) no-repeat;background-size: cover;}
-.seoul {background: url(../assets/74H.jpg) no-repeat;background-size: cover;}
-.buenos {background: url(../assets/224H.jpg) no-repeat;background-size: cover;}
+.paris {background: url(../assets/paris-home.jpg) no-repeat; background-size: cover;}
+.moscow {background: url(../assets/moscow.jpg) no-repeat;background-size: cover;}
+.mumbai {background: url(../assets/mumbai.jpg) no-repeat;background-size: cover;}
+.newyork {background: url(../assets/newyork.jpg) no-repeat;background-size: cover;}
+.seoul {background: url(../assets/seoul.jpg) no-repeat;background-size: cover;}
+.buenos {background: url(../assets/buenos-aires.jpg) no-repeat;background-size: cover;}
 
 
 /*=====POST PAGE=====*/
 
+.post_header {
+        border-bottom: solid $background-primary 2px;
+}
+
+.post_footer {
+    border-top: solid $background-primary 2px;
+    margin-top: 2em;
+}
 
 article {
     margin-bottom: 4em;
     color: $type-dark;
+    padding-top: 3.5em;
 
     p {
         padding-bottom: 1em;
